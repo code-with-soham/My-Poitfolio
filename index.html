@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!---------------- Heading Start Here -------------------->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Soham Kundu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS Library -->
+</head>
+<!-- Heading End Here -->
+
+
+<!---------------------- Body Start Here ----------------->
+<body>
+  <div class="layer-blur">
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+  </div>
+
+      <!-- Container for 1st Page -->
+      <div class="container">
+
+ <!------------------Header section ------------------------->
+        <header>
+          <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">SOHAM</h1>
+
+          <!-- navbar section -->
+           <nav class="navbar">
+          <a data-aos="fade-down" data-aos-duration="1500" href="#">Home</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#">About</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
+           </nav>
+            <button data-aos="fade-down" data-aos-duration="1500">
+              PROJECTS
+            </button>
+        </header>
+
+
+<!------------------ main section -------------------------->
+      <main>
+        <div class="content">
+          <div data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="1500" class="tag-box"> 
+        <div class="tag">INTRO &angmsdaa;</div>
+        </div>
+        <h1 data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="2000">I'm  <br> <span>Soham Kundu</span></h1>
+          <p data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="2500" class="description">A passionate Full Stack Developer with experience in designing, developing, and deploying dynamic web applications using modern technologies .</p>
+
+          <div data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <a href="#" class="project">PROJECTS ></a>
+            <a href="#" class="hire-me">Hire Me ></a>
+          
+          </div>
+        </main>
+
+        <!------------ 3D model render from Spline ---------->
+        <spline-viewer data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="3000"
+        class="robot" 
+        url="https://prod.spline.design/FBpoQKLhDoDDk22Y/scene.splinecode">
+      </spline-viewer>
+        </div>
+      
+
+ <!-- javascript file for robot 3d -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
+<!-- robot for Tablet -->
+<spline-viewer class="robot-tablet" url="https://prod.spline.design/TGyRPP8rc2m8OMbN/scene.splinecode"></spline-viewer>
+
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script> 
+</body>
+</html>
