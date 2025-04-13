@@ -214,7 +214,10 @@ main{
   right: -20%;
   background: transparent;
   z-index: 1;
-  /* pointer-events:none ; */
+}
+
+.robot-tablet{
+  display: none;
 }
 
 /* TABLET RESPONSIVE */
