@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <!---------------- Heading Start Here -------------------->
+  <!------------------------- Heading Start Here ------------------------------>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Soham Kundu – Frontend Developer with experience in modern web technologies.">
+<meta property="og:title" content="Soham Kundu Portfolio">
+<meta property="og:description" content="Creative frontend developer building interactive and elegant web experiences.">
+<meta property="og:image" content="./favicon.ico">
+<meta property="og:type" content="website">
+
   <title>Soham Kundu</title>
   <link rel="stylesheet" href="style.css">
- <link rel="icon" href="/favicon.ico" />   <!-- fevicon icon -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS Library -->
+ <link rel="icon" type="image/x-icon" href="./favicon.ico">    <!-- fevicon icon -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS Library for Smooth Animation -->
+
+  <!-- import Jquery for loading screen -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <!-- Heading End Here -->
 
 
-<!---------------------- Body Start Here ----------------->
+<!-------------------------------- Body Start Here --------------------------------->
 <body>
   <div class="layer-blur">
-    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <!-- <img class="image-gradient" src="gradient.png" alt="Colorful blurred gradient background"> -->
+     <video  deffer src="./galaxy.mp4" autoplay muted loop class="video-gradient"></video>   <!-- background video -->
   </div>
 
       <!-- Container for 1st Page -->
       <div class="container">
 
- <!------------------Header section ------------------------->
+ <!--------------------------Header section ----------------------------------->
         <header>
           <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">SOHAM</h1>
 
@@ -33,20 +44,21 @@
           <a data-aos="fade-down" data-aos-duration="2500" href="#">Projects</a>
           <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
            </nav>
+          
             <button data-aos="fade-down" data-aos-duration="1500">
               PROJECTS
             </button>
         </header>
 
 
-<!------------------ main section -------------------------->
+<!---------------------------- main section ---------------------------------->
       <main>
         <div class="content">
           <div data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="300"
           data-aos-offset="0" data-aos-duration="1500" class="tag-box"> 
-        <div class="tag">INTRO &angmsdaa;</div>
+          <div class="tag">INTRO &raquo;</div>
         </div>
         <h1 data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
@@ -55,7 +67,7 @@
           <p data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="300"
-          data-aos-offset="0" data-aos-duration="2500" class="description">A passionate Full Stack Developer with experience in designing, developing, and deploying dynamic web applications using modern technologies .</p>
+          data-aos-offset="0" data-aos-duration="2500" class="description">A passionate Frontend Developer with experience in designing, developing, and deploying dynamic web applications using modern technologies.</p>
 
           <div data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
@@ -67,27 +79,46 @@
           </div>
         </main>
 
-        <!------------ 3D model render from Spline ---------->
-        <spline-viewer data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0" data-aos-duration="3000"
+        <!---------------------- 3D model render from Spline ----------------------->
+        <spline-viewer 
         class="robot" 
         url="https://prod.spline.design/FBpoQKLhDoDDk22Y/scene.splinecode">
       </spline-viewer>
         </div>
       
+        <!------------------ Refresh to loader ----------------------------->
+        <div class="banter-loader">
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+          <div class="banter-loader__box"></div>
+        </div>
 
- <!-- javascript file for robot 3d -->
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
+ <!----------- javascript file for robot 3d ----------------->
+ <!-- 🚀 Performance Enhancements -->
+ <!-- Defer AOS and Spline JS to improve page load speed: -->
+<script defer type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
 
 <!-- robot for Tablet -->
 <spline-viewer class="robot-tablet" url="https://prod.spline.design/TGyRPP8rc2m8OMbN/scene.splinecode"></spline-viewer>
 
 <!-- AOS Script-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script> 
+
+<!-- Jquery Script  for Loading Screen-->
+<script>
+$(window).on("load",function(){
+    $(".banter-loader").fadeOut("slow");
+  });
+  </script>
 </body>
 </html>
